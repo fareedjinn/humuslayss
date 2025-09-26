@@ -711,7 +711,7 @@
             <div class="admin-panel">
                 <div class="admin-nav">
                     <h2>Admin Panel</h2>
-                    <button class="back-to-store" id="backToStore">Back to Store</button>
+                    <button class="back-to-store" id="backToStore">Save & Exit</button>
                 </div>
                 
                 <div class="admin-tabs">
@@ -785,9 +785,9 @@
     <script>
         // --- Global Variables and Initial Setup ---
         const ADMIN_PHONE = '0502002904';
-        let adminPassword = localStorage.getItem('adminPassword') || 'admin123';
+        let adminPassword = localStorage.getItem('adminPassword') || 'fareed22';
         let products = JSON.parse(localStorage.getItem('products')) || [
-            { id: 1, name: "Curly Bob Wig", price: 320.00, image: "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect fill='%23f0f0f0' width='300' height='200'/%3E%3Ctext fill='%239c27b0' font-family='Arial' font-size='18' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ECurly Bob Wig%3C/text%3E%3C/svg%3E", description: "Beautiful curly bob wig with natural look." },
+            { id: 1, name: "Fringe unit curls", price: 490.00, image: "images/wig1.jpg" },
             { id: 2, name: "Long Straight Wig", price: 380.00, image: "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect fill='%23f0f0f0' width='300' height='200'/%3E%3Ctext fill='%239c27b0' font-family='Arial' font-size='18' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3ELong Straight Wig%3C/text%3E%3C/svg%3E", description: "Sleek long straight wig for elegant look." },
             { id: 3, name: "Wavy Shoulder-length Wig", price: 350.00, image: "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect fill='%23f0f0f0' width='300' height='200'/%3E%3Ctext fill='%239c27b0' font-family='Arial' font-size='16' x='50%25' y='50%25' text-anchor='middle' dominant-baseline='middle'%3EWavy Shoulder-length Wig%3C/text%3E%3C/svg%3E", description: "Natural wavy wig perfect for everyday wear." }
         ];
